@@ -1,0 +1,100 @@
+body{
+    margin:0px;
+    padding: 0px;
+    color: black;
+    display:flex;
+    width:100vw;
+}
+.container_one{
+    width:100vw;
+    height:160px;
+    color:white !important;
+    position: relative;
+    background-image: url("images/image1.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding-top: 90px;
+    margin-bottom: 35px;
+} 
+.overlay{
+    width: 100%;
+    height:20%;
+    font-size: 26px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgpa(0,0,0,0.5);
+    padding: 50px 0;
+}
+.overlay span{
+   display: inline;
+   display: flex;
+   flex-direction: row;
+}
+.overlay_innerTwo span{
+    color:yellow;
+    height:50px;
+    padding:6px;
+}
+.col1_page_title .first_col,.second_col{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align:center;
+    margin-bottom: 20px;
+}
+.col1_page_title img{
+    height:270px;
+    width:360px;
+    background-position: center center;
+    background-size: cover;
+}
+.container_Two,.container_Three,.container_Four,.container_Five,.container_Six,.container_Seven{
+box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+padding: 10px;
+height:580px;
+width:385px;
+margin:10px;
+border-radius: 9px;
+}
+h1{
+    padding: 7px;
+    text-align: start;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 1s linear forwards;
+}
+.container_one h1{
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 1s linear forwards;
+}
+p{
+    color:rgb(95, 91, 91);
+    display: flex;
+    margin:10px;
+    text-align: start;
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 1s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.article:hover img{
+transform: scale(1.2);
+}
+.article{
+    overflow: hidden;
+}
+.article img{
+    width:100%;
+    transition: transform 1s;
+}

@@ -1,0 +1,711 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="./index.js" defer></script>
+      <!-- Link Swiper's CSS -->
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+<script src="https://kit.fontawesome.com/85f2ca0684.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  .container1{
+  max-width:2000px;
+  width:50%;
+  position:relative;
+  margin:0 auto;
+  }
+   .mySwiper{
+   max-width: 800px;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   }
+    
+   .card{
+   text-align: center;
+   background-color: #ffffff;
+   padding:20px 30px;
+   border-radius: 10px;
+ box-shadow:rgb(149 157 165 / 20%) 0px 8px 24px;
+   }
+ .swiper-slide{
+ display:flex;
+ align-items:center;
+ }
+   .card img{
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   margin-top:-80px;
+   }
+   h3,h4{
+   margin-bottom: 0px;
+   margin-top: 0px;
+   }
+ p{
+ font-size:15px;
+ line-height:20px;
+ color:#222222;
+ }
+   h3{
+   font-size: 16px;
+   }
+   h4{
+   font-size: 12px;
+   margin-top: 10px;
+   color:#0096FF;
+   }
+ .swiper-button-next, .swiper-rtl .swiper-button-prev{
+ color:#0096FF;
+ }
+ .swiper-button-next:after, .swiper-button-prev:after{
+ font-size:32px;
+ }
+ .review i{
+ color:orange;
+ }
+  </style>
+<body>
+  <!-- header section -->
+    <section class="head">
+    <header>
+        <a href="#" class="logo"><i class="ri-roadster-fill"></i><span>VRS</span></a>
+        <ul class="navbar">
+            <li><a href="#" class="upper">HOME</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="./service.html">SERVICES</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="#">UPDATE</a></li>
+            <li><a href="./contactus.html">CONTACT</a></li>
+            <li><a href="#">PAGES</a></li>
+        </ul>
+        <div class="main">
+            <a id="signin" href="#" class="user"><i class="ri-user-3-fill"></i>Sign In</a>
+            <a id="signin" href="#">Register</a>
+            <div class="box_menu" id="menu_icon"><i class="ri-menu-fill"></i></div>
+        </div>
+    </header>
+    </section>
+
+<!-- sliding part start -->
+
+    <section class="sec_part">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./images/ertiga.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./images/innova.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./images/xuv700.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./images/dzire.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./images/nexon.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./images/wagonr.webp" alt=""></div>
+              
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </section>
+
+    <!-- location selection -->
+
+    <section class="selection">
+        <div class="drop-down">
+            <h1 class="select_heading"><br>RENT A CAR NOW!</h1>
+            <form action="">
+                <span class="content">
+                    <select class="select" name="CAR MODEL" >
+                        <option size="8" value="select_Car_Model">Car Model</option>
+                        <option value="ertiga">ERTIGA</option>
+                        <option value="innova">INNOVA</option>
+                        <option value="xuv500">XUV500</option>
+                        <option value="dzire">DZIRE</option>
+                        <option value="nexon">NEXON</option>
+                        <option value="wagonr">WAGONR</option>
+                    </select>
+                <span class="pick_up_location">
+                    <select class="select" name="pickup" >
+                        <option value="pick-up">PICK-UP LOCATION</option>
+                        <option value="pick-up">MATHURA</option>
+                        <option value="pick-up">VRINDAVAN</option>
+                        <option value="pick-up">GOVARDHAN CHAURAHA</option>
+                        <option value="pick-up">KRISHNA NAGAR</option>
+                        <option value="pick-up">CHHATIKARA</option>
+                        <option value="pick-up">CHAUMUHAN</option>
+                    </select>
+                </span>
+                <span class="pick_up_date">
+                    <input class="same" type="date" name="" value="">
+                </span>
+                <span class="drop_off_location">
+                    <select class="select" name="dropoff" >
+                        <option value="drop-off">DROP-OFF LOCATION</option>
+                        <option value="drop-off">AGRA</option>
+                        <option value="drop-off">JAIPUR</option>
+                        <option value="drop-off">DELHI</option>
+                        <option value="drop-off">NOIDA</option>
+                        <option value="drop-off">FIROZABAD</option>
+                        <option value="drop-off">ITAWAH</option>
+                    </select>
+                </span>
+                <span class="drop_off_date">
+                    <input class="same" type="date" name="" value="">
+                </span>
+                <span class="button">
+                    <input class="same_a" type="submit" name="b2" value="SUBMIT">
+                </span>
+                </span>
+            </form>
+            <br>
+        </div>
+    </section>
+
+    <!-- cards section -->
+
+    <div class="container">
+
+      <h3 class="title"> Available Cars </h3>
+   
+      <div class="products-container">
+   
+         <div class="product" data-name="p-1">
+            <img src="./images/dzire.webp" alt="" id="img1">
+            <h3>SWIFT DZIRE</h3>
+            <div class="price">$200.00</div>
+         </div>
+   
+         <div class="product" data-name="p-2">
+            <img src="./images/nexon.webp" alt="" id="img2">
+            <h3>NEXON</h3>
+            <div class="price">$300.00</div>
+         </div>
+   
+         <div class="product" data-name="p-3">
+            <img src="./images/wagonr.webp" alt="" id="img3">
+            <h3>WAGONR</h3>
+            <div class="price">$250.00</div>
+         </div>
+   
+         <div class="product" data-name="p-4">
+            <img src="./images/innova.webp" alt="" id="img4">
+            <h3>INNOVA</h3>
+            <div class="price">$500.00</div>
+         </div>
+   
+         <div class="product" data-name="p-5">
+            <img src="./images/ertiga.webp" alt="" id="img5">
+            <h3>ERTIGA</h3>
+            <div class="price">$450.00</div>
+         </div>
+   
+         <div class="product" data-name="p-6">
+            <img src="./images/xuv700.webp" alt="" id="img6">
+            <h3>XUV-700</h3>
+            <div class="price">$600.00</div>
+         </div>
+   
+      </div>
+   
+   </div>
+   
+   <div class="products-preview">
+   
+      <div class="preview" data-target="p-1">
+         <i class="fas fa-times"></i>
+         <img src="./images/dzire.webp" alt="" id="img1">
+         <h3>SWIFT DZIRE</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$200.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">Rent now</a>
+             
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-2">
+         <i class="fas fa-times"></i>
+         <img src="./images/nexon.webp" alt="" id="img2">
+         <h3>NEXON</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            
+             
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 211 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$300.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">rent now</a>
+             
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-3">
+         <i class="fas fa-times"></i>
+         <img src="./images/wagonr.webp" alt="" id="img3">
+         <h3>WAGONR</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+             
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 2780 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$250.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">rent now</a>
+             
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-4">
+         <i class="fas fa-times"></i>
+         <img src="./images/innova.webp" alt="" id="img4">
+         <h3>INNOVA</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 21250 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$500.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">rent now</a>
+             
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-5">
+         <i class="fas fa-times"></i>
+         <img src="./images/ertiga.webp" alt="" id="img5">
+         <h3>ERTIGA</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 25012 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$450.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">rent now</a>
+           
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-6">
+         <i class="fas fa-times"></i>
+         <img src="./images/xuv700.webp" alt="" id="img6">
+         <h3>XUV-700</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 21250 )</span>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+         <div class="price">$600.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">rent now</a>
+            
+         </div>
+      </div>
+   
+   </div>
+   
+    
+    
+    
+   
+   
+   
+               <!-- playsection -->
+   
+               
+               <div class="container">
+                   <video autoplay muted loop src="./images/rain.mp4" id="vido"></video>
+                   <div class="content">
+                       <h2>RENT A CAR NOW</h2>
+                       <p>Competitive car rental pricing on a wide varitey of quality vehicle, get started now!!</p>
+                       <br>
+                       <br>
+                       <button id="btn" onclick="myfunction()">PAUSE</button>
+                       <br>
+                       <br>
+   
+                       <button id="btn1" >SEE ALL CARS</button>
+                       &nbsp;&nbsp;&nbsp;
+                       <button id="btn2" >CONTACT US</button>
+                       
+                    
+                   </div>
+               </div>
+               <script>
+                   var video = document.getElementById("vido");
+                   var btn = document.getElementById("btn");
+                   function myfunction() {
+                       if(video.paused)
+                       {
+                           video.play();
+                           btn.innerHTML = "Pause";
+                       }else{
+                           
+                           video.pause();
+                           btn.innerHTML = "Play";
+                       }
+                   }
+               </script>
+   
+   
+          <!-- -----------------map-section--------------- -->
+            <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635788.814623532!2d80.85930415!3d27.138192749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39994e9f7b4a09d3%3A0xf6a5476d3617249d!2sUttar%20Pradesh!5e0!3m2!1sen!2sin!4v1671542585595!5m2!1sen!2sin" width="77%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+   
+    <div class="mini-form">
+       <br>
+       
+       <h3 class="heading">HOW TO FIND US</h3><br>
+   
+        
+        <p id="icon2"><i class="fa-solid fa-location-dot" id="icon1"></i>&nbsp;  GLA UNIVERSITY, MATHURA</p>  
+         <br>
+        <p id="icon2"><i class="fa-solid fa-phone" id="icon1"></i> &nbsp; 91+ 9058429065</p>  
+         <br>
+   
+        <p id="icon2"> <i  class="fa-solid fa-envelope" id="icon1"></i> &nbsp; abc@gmail.com</p>  
+         <br>
+   
+         <h3 class="heading">OPENING HOURS</h3>
+         <br>
+         <br>
+         
+         <p id="days">Monday-Friday&nbsp;&nbsp;&nbsp;&nbsp;10:00-18:00</p>
+         <p id="days">Saturday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00-18:00</p>
+         <p id="days">Sunday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00-18:00</p>
+   
+        
+        
+   
+    </div>
+   
+   
+    <!-- slider section -->
+    <div class="container">
+      <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+           <div class="swiper-slide">
+             <div class="card">
+                 <img src="./images/rev.jpg" alt="" srcset="">
+             <div class="review">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+             </div>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                 <h3>Satya Nadella</h3>
+                 <h4>CEO, Microsoft</h4>
+             </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="card">
+                <img src="./images/rev4.jpg" alt="" srcset="">
+            <div class="review">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                <h3>Satya Nadella</h3>
+                <h4>CEO, Microsoft</h4>
+            </div>
+          </div>
+           <div class="swiper-slide">
+             <div class="card">
+                 <img src="./images/rev1.jpg" alt="" srcset="">
+             <div class="review">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fas fa-star-half"></i></i>
+             </div>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                 <h3>Safra Catz</h3>
+                 <h4>CEO, Oracle </h4>
+             </div>
+           </div>
+           <div class="swiper-slide">
+             <div class="card">
+                 <img src="./images/rev2.jpg" alt="" srcset="">
+             <div class="review">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+             </div>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+                 <h3>Mark Zuckerberg</h3>
+                 <h4>CEO, Facebook</h4>
+             </div>
+           </div>
+         </div>
+       </div>
+        <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-pagination"></div>
+   </div>
+   <!--  -->
+   <!-- !-- Swiper JS --> 
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  var slider = new  Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      breakpoints: {  
+      '480': {
+      slidesPerView: 2,
+      spaceBetween: 40,},
+      '640': {
+      slidesPerView: 3,
+      spaceBetween: 50, },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+          delay: 2000,
+      }
+  })
+</script>
+
+
+
+    
+
+    
+  
+
+
+    <!-- footer section -->
+
+
+ <section class="our_footer">
+
+    <footer class="footer">
+        <div class="footer_container">
+    
+          <div class="footer-top">
+    
+            <div class="footer-brand">
+              <a href="#" class="logo">
+                <img src="./images/logoo.svg" alt="Ridex logo">
+              </a>
+    
+              <p class="footer-text">
+                Search for cheap rental cars in India. With a diverse fleet of 19,000 vehicles, Waydex offers its
+                consumers an
+                attractive and fun selection.
+              </p>
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Company</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">About us</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Services</a>
+              </li>
+    
+              <li>
+                <a href="#blog" class="footer-link">Blog</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Update</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Contact</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Pages</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Support</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Help center</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Ask a question</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Privacy policy</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Terms & conditions</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Places</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Agra</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Jaipur</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">New Delhi</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Noida</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Itawah</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Firozabad</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+    
+          <div class="footer-bottom">
+    
+            <ul class="social-list">
+    
+              <li>
+                <a href="https://www.facebook.com/revvindia/" class="social-link">
+                   
+                  <i class="ri-facebook-fill" id="icon1"></i>
+                </a>
+              </li>
+    
+              <li>
+                <a href="https://www.instagram.com/revv_india/" class="social-link">
+                  <i class="ri-instagram-fill" id="icon1"></i>
+                </a>
+              </li>
+    
+              <li>
+                <a href="https://twitter.com/revv_india" class="social-link">
+                  <i class="ri-twitter-fill" id="icon1"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCdASUGQcRPefuQYO6rT331Q" class="social-link">
+                  <i class="ri-youtube-fill" id="icon1"></i>
+                </a>
+              </li>
+            </ul>
+            <h2 class="credit">All Right Reserved!</h2>
+          </div>
+          
+        </div>
+    
+      </footer>
+ </section>
+
+
+
+
+
+
+
+
+
+    <!--js of sliding images -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+
+            },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script> 
+</body>
+</html>

@@ -1,0 +1,430 @@
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin:auto;
+}
+
+
+.text {
+  color: black;
+  background-color:#b3e5fc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 130px;
+  width: 200px;
+  opacity: 0.8;
+  text-align: left;
+  font-weight:bold;
+}
+
+.text1 {
+  color: black;
+  background-color:#b3e5fc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  padding: 18px 12px;
+  position: relative;
+  bottom: 130px;
+  width: 160px;
+  text-align: left;
+  opacity: 0.8;
+  font-weight:bold;
+}
+
+.text2{
+  color: black;
+  background-color:#b3e5fc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  padding: 18px 12px;
+  position: relative;
+  bottom: 130px;
+  width: 240px;
+  text-align: left;
+  opacity: 0.8;
+  font-weight:bold;
+
+}
+
+
+
+.numbertext {
+  color: black;
+  background-color:orange;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  font-weight:bold;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: orange;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.container1{
+	font-family: 'Poppins', sans-serif;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	cursor:pointer;
+}
+	
+.container1 .box{
+	position:relative;
+	width: 410px;
+	padding:40px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	border-radius: 25px;
+	margin: 5px;
+	box-sizing: border-box;
+	text-align:center;
+	overflow:hidden;
+}
+
+.container1 .box .icon{
+	position:relative;
+	width:80px;
+	height:80px;
+	color: #fff;
+	background:#000;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	font-size:40px;
+	font-weight:700;
+	transition:1s;
+}
+
+.container1 .box .content{
+	position:relative;
+	z-index:1;
+	transition:0.5s;
+	color:black;
+	text-decoration:none;
+}
+
+.container1 .box .icon{
+	position:relative;
+	z-index:1;
+	transition:0.5s;
+	color:orange;
+	text-decoration:none;
+}
+
+.container1 .box:hover .content{
+	color:#23e629;
+}
+
+.container1 .box .icon:hover{
+	color:blue;
+}
+
+.container1 .box .content h4{
+	font-size:20px;
+	margin:10px 0;
+	padding:0;
+}
+
+.container1 .box .content p{
+	margin:0;
+	padding:0;
+}
+
+.container1 .box:before{
+	content: '';
+	width:50%;
+	height:100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255, .2);
+	z-index:2;
+}
+
+.content img{
+	padding-right:10px;
+}
+
+.height{
+	min-height:calc(100vh - 242px - 202px);
+}
+.monospace{
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 62px;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.menu{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color:#8ea1c3 ;
+    overflow:hidden;
+}
+
+li.menu{
+    float:left;
+}
+
+li a{
+    display:block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+
+li a:hover{
+    background-color:orange;
+}
+
+#nav-image{
+    padding-right:5px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:#283c5f ;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: orange;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:#D3D3D3;
+}
+
+.show {
+  display: block;
+}
+
+.menu input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 15px;
+  border-radius: 50px;
+  width:200px;
+}
+
+header a:link{
+    color:black;
+    text-decoration: none;
+}
+
+header a:visited{
+    color:black;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: blue;
+    text-decoration: none;
+}
+.footer{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	margin-top:1px;
+}
+
+.main-content{
+	display:flex;
+	font: 15px Arial, sans-serif;
+	z-index:10;
+}
+
+.main-content .box1{
+	flex-basis: 60%;
+	padding:10px 50px;
+	line-height:1px;
+}
+
+.main-content .box2{
+	flex-basis: 75%;
+	padding:10px 0px;
+	line-height:1px;
+}
+
+.main-content .box3{
+	flex-basis: 55%;
+	padding: 10px 5px;
+	line-height:1px;
+}
+
+.box1 h4{
+	font-size:1.125rem;
+	font-weight: 600;
+}
+
+.box3 h4{
+	font-size:1.125rem;
+	font-weight: 600;
+}
+
+.box1{
+	margin:20px 0 0 0;
+}
+
+.box2{
+	margin:45px 0 0px 0;
+}
+
+.box3{
+	margin:20px 100px 0 0;
+}
+
+.right .social{
+	margin:20px 0 0 0;
+}
+
+.right .social a{
+	color:red;
+}
+
+.right .social a span{
+	height:30px;
+	width:30px;
+    background:#1a1a1a;
+    line-height:30px;
+	text-align:center;
+	font-size:18px;
+	border-radius:5px;
+	transition:0.3s;
+}
+
+
+.right .social a span:hover{
+	background: orange;
+}
+
+.left a:link{
+	color:white;
+	text-decoration: none;
+}
+
+.left a:visited{
+	color:white;
+	text-decoration: none;
+}
+
+.left a:hover{
+	color: orange;
+	text-decoration: none;
+}
+
+.center a:link{
+	color:white;
+	text-decoration: none;
+}
+
+.center a:visited{
+	color:white;
+	text-decoration: none;
+}
+
+.center a:hover{
+	color: orange;
+	text-decoration: none;
+}
+
+
+	
+	
