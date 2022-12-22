@@ -1,0 +1,56 @@
+.Updates_Section{
+    padding: 20px;
+    margin: 20px;
+    font-size:xx-large;
+}
+body{
+    background-image: url(./images2/background.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.update{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 50px;
+
+}
+.top{
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    justify-content: center;
+    
+}
+.top:hover {
+    transform: scale(0.95);
+    background-color: gray;
+}
+.top img{
+    width: 320px;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+}
+ .top h1{
+    padding: 0 40px;    
+}
+
+.top p{
+    width: 350px;
+    padding: 5px;
+    font-size:medium;
+    text-align: start;
+}
+.first_col,.second_col{
+    display: flex;
+    flex-direction: row;
+}
+.update p{
+    margin-left: 20%;
+}
