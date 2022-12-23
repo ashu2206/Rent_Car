@@ -16,7 +16,7 @@ body
     --main-color: orange;
 }
 .head{
-    height: 110px;
+    height: 85px;
     background: var(--bg-color);
     color: var(--text-color);
 }
@@ -59,6 +59,7 @@ header{
     margin: 0px 23px;
     transition: all .50s ease;
     font-size: 20px;
+    
 
 }
 
@@ -84,11 +85,12 @@ header{
 }
 #signin
 {
-    font-size: 20px;
+    font-size: 22px;
+    margin-right: 5px;
 }
 #signin1
 {
-    font-size: 30px;
+    font-size: 10px;
 }
 .user{
     display: flex;
@@ -115,7 +117,7 @@ header{
 
 .sec_part{
     margin-top: 5px;
-    height: 80%;
+    height: 88%;
     background-color: #222;
     display: flex;
     align-items: center;
@@ -124,34 +126,36 @@ header{
 
 }
 .swiper{
-    width: 50%;
+    width: 65%;
     height:fit-content;
 }
 .swiper-slide img{
-    height: 400px;
-    width: 750px;
+    height: 450px;
+    width: 1000px;
+    border-radius: 20px;
     
 
 }
 .select{
     height: 39px;
-    width: 170px;
+    width: 160px;
     border-color: white;
     margin: 2px;
-    margin-top: 700px;
+    margin-top: 750px;
 }
 .drop-down{
-    width: 80%;
+    width: 86%;
     height: 18%;
     background-color: orangered;
-    margin-left: 10%;
-    margin-top: -70px;
+    margin-left: 7%;
+    margin-top: -30px;
 }
 .select_heading{
     align-items: center;
     display: flex;
     justify-content: center;
     color: white;
+    
 }
  
 .drop_off_date{
@@ -167,13 +171,14 @@ header{
     margin-left: 2px;
 }
 .same_a{
-    width: 150px;
+    width: 70px;
     height: 40px;
     background: transparent;
-    border-color: white;
+    border: 2px solid white;
     color: white;
     cursor: pointer;
     margin: 2px;
+    box-sizing: border-box;
 }
 
 li { list-style: none; }
@@ -224,6 +229,7 @@ i { display: block; }
    color: white;
    font-weight: 600;
    margin-bottom: 8px;
+   font-size: large;
  }
  
  .footer-link {
