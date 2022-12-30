@@ -740,4 +740,21 @@ body{
 {
     font-size: 20px;
 }
+
+#customerh1
+{
+    color: #fff;
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#customerp
+{
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
 /*review card*/
+
+
