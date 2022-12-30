@@ -42,6 +42,7 @@ header{
     font-size: 35px;
     margin-right: 5px;
 }
+ 
 .logo span{
     color: var(--text-color);
     font-size: 35px ;
@@ -236,6 +237,13 @@ i { display: block; }
    font-size: small;
    padding-block: 6px;
 
+ }
+
+ #logofoot
+ {
+    height: 150px;
+    width: 200px;
+    margin-top: -40px;
  }
  
  .footer-link:is(:hover, :focus) { 
